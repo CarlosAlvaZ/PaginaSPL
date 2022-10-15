@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Prueba Server #1</title>
+    <style>
+        *, *::after, *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --initial-font-size: 50px;
+        }
+
+        main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5428cc+0,5629db+50,9876db+100 */
+            background: #5428cc; /* Old browsers */
+            background: -moz-linear-gradient(top,  #5428cc 0%, #5629db 50%, #9876db 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  #5428cc 0%,#5629db 50%,#9876db 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  #5428cc 0%,#5629db 50%,#9876db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5428cc', endColorstr='#9876db',GradientType=0 ); /* IE6-9 */
+        }
+
+        h1 {
+            font-family: 'Helvetica', sans-serif;
+            font-size: var(--initial-font-size);
+            color: white;
+            text-align: center;
+            text-shadow: 0 0 12px black;
+            animation-name: slidein;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes slidein {
+            0% {
+                margin-top: -10%;
+            }
+            100% {
+                margin-top: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Esta es una pagina prueba</h1>
+        </div>
+    </main>
+</body>
+</html>
